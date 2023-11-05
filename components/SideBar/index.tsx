@@ -8,7 +8,7 @@ import CartBadge from '../CartBadge';
 export default function SideBar() {
  return (
   <Stack className={styles.sidebar} sx={(theme) => ({ backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.white })}>
-   <Link href="" passHref>
+   <Link href="/items" passHref>
     <Image src="/logo.svg" width={40} height={40} alt="ShopEase Logo" />
    </Link>
    <NavigationList />
