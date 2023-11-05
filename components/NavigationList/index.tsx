@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { IconHistory, IconList, IconReportAnalytics } from '@tabler/icons';
 import { Stack, useMantineTheme } from '@mantine/core';
+import ColorSchemeToggle from '../ColorSchemeToggle';
 
 export default function NavigationList() {
  const theme = useMantineTheme();
@@ -8,7 +9,8 @@ export default function NavigationList() {
  const iconsStyles = { color: theme.colorScheme === 'dark' ? theme.white : theme.colors.gray[7] };
 
  return (
-  <Stack spacing={60}>
+  <Stack style={{ height: 400, justifyContent: 'space-evenly', alignItems: 'center' }}>
+   <ColorSchemeToggle />
    <Link href="/items" passHref>
     <IconList style={iconsStyles} />
    </Link>
