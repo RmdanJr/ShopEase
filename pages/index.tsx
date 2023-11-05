@@ -6,7 +6,7 @@ export default function HomePage() {
   const theme = useMantineTheme();
 
   return (
-    <Group style={{ backgroundColor: theme.colorScheme === 'light' ? theme.colors.gray[0] : '' }}>
+    <Group style={{ backgroundColor: theme.colorScheme === 'light' ? theme.colors.gray[0] : theme.colors.dark[7] }}>
       <SideBar />
       <ColorSchemeToggle />
     </Group>
